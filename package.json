@@ -1,0 +1,14 @@
+{
+  "name": "jagdcake",
+  "version": "0.0.0",
+  "description": "personal website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JagdCake",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "tailwindcss": "^1.1.2"
+  }
+}
