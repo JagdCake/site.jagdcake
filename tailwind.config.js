@@ -6,9 +6,10 @@ module.exports = {
                 'eerie': '#22181c',
                 'primary-orange': '#ca4913',
             },
-            screens: {
-                  'sm': '360px',
-            },
+          spacing: {
+            '72': '18rem',
+            '80': '20rem',
+          },
         }
     },
     variants: {},
