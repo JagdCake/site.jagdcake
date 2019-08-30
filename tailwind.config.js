@@ -2,9 +2,9 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                'secondary-yellow': '#fecf40',
+                'secondary-brown': '#c28236',
                 'eerie': '#22181c',
-                'primary-pink': '#e86178',
+                'primary-orange': '#ca4913',
             }
         }
     },
