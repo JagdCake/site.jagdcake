@@ -7,6 +7,7 @@ module.exports = {
             colors: {
                 'secondary-brown': '#ffc681',
                 'eerie': '#22181c',
+                'ivory': '#fffff2',
                 'primary-orange': '#ca4913',
             },
             spacing: {
