@@ -1,3 +1,6 @@
+.PHONY: create-prod-dir
+.PHONY: copy-files-to-prod
+
 dir.dev = ./
 dir.prod = ./docs/
 
@@ -14,3 +17,12 @@ css.prod = $(dir.prod.css)/main.css
 
 css/main.css: css/tailwind.css tailwind.config.js
 	npx tailwind build css/tailwind.css -o css/main.css
+
+create-prod-dir:
+	mkdir $(dir.prod)/
+	mkdir $(dir.prod.css)/
+	mkdir $(dir.prod.images)/
+
+copy-files-to-prod:
+	cp $(css.dev) $(css.prod)
+	cp -r $(dir.dev.images) $(dir.prod)/
