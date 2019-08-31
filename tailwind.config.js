@@ -1,14 +1,14 @@
 module.exports = {
     theme: {
         boxShadow: {
-            outline: '0 0 0 3px rgba(202,73,19,0.7)',
+            outline: '0 0 0 3px rgba(239,62,54,0.7)',
         },
         extend: {
             colors: {
                 'secondary-brown': '#ffc681',
                 'eerie': '#22181c',
                 'ivory': '#fffff2',
-                'primary-orange': '#ca4913',
+                'primary-orange': '#ef3e36',
             },
             spacing: {
                 '72': '18rem',
