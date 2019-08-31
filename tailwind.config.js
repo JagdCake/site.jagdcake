@@ -1,5 +1,8 @@
 module.exports = {
     theme: {
+        boxShadow: {
+            outline: '0 0 0 3px rgba(202,73,19,0.7)',
+        },
       extend: {
             colors: {
                 'secondary-brown': '#ffc681',
