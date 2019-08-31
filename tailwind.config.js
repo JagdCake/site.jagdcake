@@ -2,7 +2,7 @@ module.exports = {
     theme: {
       extend: {
             colors: {
-                'secondary-brown': '#c28236',
+                'secondary-brown': '#ffc681',
                 'eerie': '#22181c',
                 'primary-orange': '#ca4913',
             },
