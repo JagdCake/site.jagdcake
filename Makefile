@@ -13,6 +13,7 @@ dir.dev.images = $(dir.dev)/images/
 dir.prod.css = $(dir.prod)/css/
 dir.prod.images = $(dir.prod)/images/
 
+html.dev = $(dir.dev)/index.html
 css.dev = $(dir.dev.css)/main.css
 
 html.prod = $(dir.prod)/index.html
@@ -33,6 +34,7 @@ create-prod-dir:
 	mkdir $(dir.prod.images)/
 
 copy-files-to-prod:
+	cp $(html.dev) $(dir.prod)/
 	cp $(css.dev) $(css.prod)
 	cp -r $(dir.dev.images) $(dir.prod)/
 
