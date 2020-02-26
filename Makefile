@@ -50,7 +50,8 @@ build-html:
 
 build-css:
 	@echo Make sure the CSS is purged of unused rules before minifying
-	@echo Use uncss
+	@echo uncss $(html.prod) --output ./main.css
+	@echo mv ./main.css $(css.prod)
 	@echo Press enter to confirm
 	@read
 	$(minify.css) --input $(css.prod) --output $(css.prod)
