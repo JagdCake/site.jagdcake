@@ -9,6 +9,6 @@
   "author": "JagdCake",
   "license": "GPL-3.0-or-later",
   "dependencies": {
-    "tailwindcss": "^1.1.2"
+    "tailwindcss": "^1.4.4"
   }
 }
