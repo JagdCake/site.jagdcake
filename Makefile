@@ -27,9 +27,9 @@ minify.css = csso
 optimize.png = optipng -o5
 optimize.svg = svgo
 
-all: css/main.css create-prod-dir copy-files-to-prod build-html build-css optimize-images
+all: create-prod-dir copy-files-to-prod build-html build-css optimize-images
 
-update: css/main.css copy-files-to-prod build-html build-css optimize-images
+update: copy-files-to-prod build-html build-css optimize-images
 
 css/main.css: css/tailwind.css tailwind.config.js
 	npm run compile-css
