@@ -16,5 +16,8 @@ module.exports = {
         }
     },
     variants: {},
-    plugins: []
+    plugins: [],
+    purge: [
+        "./index.html",
+    ],
 }
