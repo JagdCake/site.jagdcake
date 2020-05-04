@@ -17,7 +17,6 @@ dir.prod.css = $(dir.prod)/css/
 dir.prod.images = $(dir.prod)/images/
 
 html.dev = $(dir.dev)/index.html
-css.dev = $(dir.dev.css)/main.css
 
 html.prod = $(dir.prod)/index.html
 css.prod = $(dir.prod.css)/main.css
@@ -42,18 +41,14 @@ create-prod-dir:
 
 copy-files-to-prod:
 	cp $(html.dev) $(dir.prod)/
-	cp $(css.dev) $(css.prod)
 	cp -r $(dir.dev.images) $(dir.prod)/
 
 build-html:
 	$(minify.html) --input-dir $(dir.prod)/ --output-dir $(dir.prod)/
 
 build-css:
-	@echo Make sure the CSS is purged of unused rules before minifying
-	@echo uncss $(html.prod) --output ./main.css
-	@echo mv ./main.css $(css.prod)
-	@echo Press enter to confirm
-	@read
+	# purges the CSS and copies the main.css file to the production dir
+	npm run compile-css-prod
 	$(minify.css) --input $(css.prod) --output $(css.prod)
 
 optimize-images:
